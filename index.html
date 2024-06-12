@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Profile site</title>
+
+    <!-- CSSファイルの読み込み -->
+    <link rel="stylesheet" href="styles/_reset.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" />
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- JavaScriptファイルの読み込み -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script defer src="scripts/main.js"></script>
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <a class="top-link" href="/"><img src="dog-icon.webp" /></a>
+      <!-- ナビゲーションメニュー -->
+      <nav>
+        <a class="nav-link" href="#profile">Profile</a>
+        <a class="nav-link" href="#favorite">Favorite</a>
+        <a class="nav-link" href="#video">Video</a>
+      </nav>
+    </header>
+
+    <!-- Swiper（スライドショー） -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/slide/sakura.jpg" /></div>
+        <div class="swiper-slide"><img src="images/slide/senro.jpg" /></div>
+        <div class="swiper-slide"><img src="images/slide/tou.jpg" /></div>
+        <div class="swiper-slide"><img src="images/slide/torii.jpg" /></div>
+      </div>
+      <h1 class="top-title">GOOD MORNING!</h1>
+    </div>
+
+    <!-- プロフィールセクション -->
+    <section class="profile" id="profile">
+      <h2 class="section-title">Profile</h2>
+      <div class="container">
+        <img class="profile-image" src="images/inu.jpg" alt="profile-photo" />
+        <div class="profile-text">
+          <p>柏倉圭佑</p>
+          <p>情報マネジメント学科３年筋トレにはまっています。高校３年の時にベンチプレス１０５ｋｇをあげました</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- お気に入りセクション -->
+    <section class="favorite" id="favorite">
+      <h2 class="section-title">Favorite</h2>
+      <div class="container">
+        <div class="item">
+          <h3 class="item-title">野球</h3>
+          <img class="item-cover" src="images/favorite/yakyuu.jpg" />
+          <p>小学校から高校まで１０年間野球をしていました。<br />今でも野球をしたり高校野球やプロ野球の試合を見に行ったりしています。</p>
+        </div>
+        <div class="item">
+          <h3 class="item-title">犬の散歩</h3>
+          <img class="item-cover" src="images/favorite/rin.jpg" />
+          <p>休日や平日の暇なときは時間を見つけて犬の散歩に行っています。<br />また、最近生後３か月のコーギーを飼いました。</p>
+        </div>
+        <div class="item">
+          <h3 class="item-title">音楽</h3>
+          <img class="item-cover" src="images/favorite/saucydog.jpg" />
+          <p>邦ロックや洋楽、HIPHOPなど様々なジャンルの曲を聞きます。<br />去年はSaucy Dogのライブに行きました。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 画像セクション -->
+    <section class="section-image">
+      <img src="images/tamago.jpg" />
+    </section>
+
+    <!-- ビデオセクション -->
+    <section class="video" id="video">
+      <h2 class="section-title">Video</h2>
+      <div class="container">
+        <div class="about">
+          <p>最近東京ドームで解散ライブを行いました。<br />。</p>
+        </div>
+        <!-- 動画プレイヤー -->
+        <iframe src="https://youtu.be/X67Rd6-eC3Q?si=0fOT_qHLHYgZVov8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>&copy; 2024 Keizou</footer>
+  </body>
+</html>
+
